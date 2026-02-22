@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Checkout Simple Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">S</span>
+        <div>
+          <h1>Simple Shop</h1>
+          <p>Checkout</p>
+        </div>
+      </div>
+      <a class="cart-button" href="index.html">Back to shop</a>
+    </header>
+
+    <main class="checkout-layout">
+      <section class="checkout-panel">
+        <h2>Contact</h2>
+        <div class="field-grid">
+          <label>
+            Email
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Phone
+            <input id="phone" type="tel" placeholder="(555) 123-4567" />
+          </label>
+        </div>
+
+        <h2>Shipping</h2>
+        <div class="field-grid two">
+          <label>
+            First name
+            <input id="first-name" type="text" placeholder="Jane" required />
+          </label>
+          <label>
+            Last name
+            <input id="last-name" type="text" placeholder="Doe" required />
+          </label>
+          <label class="full">
+            Address
+            <input id="address" type="text" placeholder="123 Market St" required />
+          </label>
+          <label>
+            City
+            <input id="city" type="text" placeholder="San Francisco" required />
+          </label>
+          <label>
+            Postal code
+            <input id="zip" type="text" placeholder="94103" required />
+          </label>
+          <label>
+            Country
+            <select id="country">
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+            </select>
+          </label>
+        </div>
+
+        <h2>Payment</h2>
+        <div class="field-grid two">
+          <label class="full">
+            Card number
+            <input id="card" type="text" placeholder="1234 5678 9012 3456" required />
+          </label>
+          <label>
+            Expiration
+            <input id="exp" type="text" placeholder="MM/YY" required />
+          </label>
+          <label>
+            CVC
+            <input id="cvc" type="text" placeholder="123" required />
+          </label>
+          <label class="full">
+            Name on card
+            <input id="card-name" type="text" placeholder="Jane Doe" required />
+          </label>
+        </div>
+
+        <label class="checkbox">
+          <input id="save" type="checkbox" />
+          Save details for next time
+        </label>
+
+        <button id="place-order" class="primary">Place order</button>
+      </section>
+
+      <aside class="checkout-summary">
+        <h2>Order summary</h2>
+        <div id="summary-items" class="summary-items"></div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="summary-subtotal">$0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <strong id="summary-shipping">$0.00</strong>
+          </div>
+          <div class="summary-row">
+            <span>Tax (8%)</span>
+            <strong id="summary-tax">$0.00</strong>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <strong id="summary-total">$0.00</strong>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>Final project starter.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
