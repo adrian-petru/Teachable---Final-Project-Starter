@@ -1,0 +1,11 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Împinge prețul în extrema dreaptă */
+  gap: 15px;
+}
+
+/* Forțăm zona de text să se extindă pentru a împinge prețul */
+.cart-item div {
+  flex-grow: 1;
+}
